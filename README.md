@@ -1,24 +1,24 @@
-# README
+# Devcamp Portfolio Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+>This is a ruby on rails 5 application.
 
-Things you may want to cover:
 
-* Ruby version
+### Features
 
-* System dependencies
+_Real time chat engine
+_Blog
+_Portfolio
+_Drag and drop interface
 
-* Configuration
 
-* Database creation
+### Code Example
 
-* Database initialization
+```ruby
+def my_great_method
+	puts "here it is"
+end
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```javascript
+alert('Hi there');
+```
