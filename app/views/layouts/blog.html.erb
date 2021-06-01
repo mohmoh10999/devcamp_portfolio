@@ -7,19 +7,20 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-     <div>
+     
+    <%= yield %>
+    <div>
       <div><%= link_to "Home", root_path %></div>
       <div><%= link_to "About", about_path %></div>
       <div><%= link_to "Contact", contact_path %></div>
       <div><%= link_to "Blog", blogs_path %></div>
       <div><%= link_to "Portfolio", portfolios_path %></div>
     </div>
-    <%= yield %>
     <% if session[:source] %>
       <p>Thanks for visiting me from <%= session[:source] %></p>
     <%end%>
